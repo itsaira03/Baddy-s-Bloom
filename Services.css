@@ -1,0 +1,121 @@
+@font-face {
+    font-family: myfont;
+    src: url(Gistesy.ttf);
+}
+@font-face {
+    font-family: Roxfont;
+    src: url(RoxboroughCF.ttf);
+}
+
+@font-face {
+    font-family: Opensan;
+    src: url(OpenSans-Bold.ttf);
+}
+
+.background{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+    font-family: thefont;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    position: absolute;
+    text-align: right;
+    margin-left: 900px;
+    margin-top: 40px;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    text-align: right;
+    margin: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: Opensan;
+}
+
+.navbar a:hover{
+    color: burlywood;
+}
+
+.newnav{
+    text-align: center;
+    text-decoration: none;
+    margin-top: -20%;
+}
+
+.newnav a{
+    margin: 130px;
+    text-decoration: none;
+    color: black;
+    font-family: Opensan;
+    cursor: pointer;
+}
+
+.newnav a:hover{
+    color: burlywood;
+}
+.container h3{
+    text-decoration: none;
+    font-family: myfont;
+    margin-top: 15px;
+    margin-left: 75px;
+    color: black;
+    font-size: 60px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    width: 25%;
+    height: 70%;
+    margin-left: 100px;
+    margin-top: 50px;
+    justify-content: center;
+    overflow: hidden;
+    float: left;
+}
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .card .content a{
+    text-align: center;
+    font-family: Opensan;
+    font-size: 100px;
+    padding: 0px;
+  }
+
+  .content a{
+    text-decoration: none;
+    font-size: 100px;
+    color: black;
+    font-family: Opensan;
+    cursor: pointer;
+  }
+
+  .content h4:hover{
+    color: burlywood;
+  }

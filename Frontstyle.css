@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@media (min-width: 1440px) {
+    html {
+      zoom: 1.5;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    html {
+      zoom: 1.7;
+    }
+  }
+  
+  @media (min-width: 3860px) {
+    html {
+      zoom: 2.5;
+    }
+  }
+
+@font-face {
+    font-family: myfont;
+    src: url(Gistesy.ttf);
+}
+@font-face {
+    font-family: Roxfont;
+    src: url(RoxboroughCF.ttf);
+}
+
+@font-face {
+    font-family: Opensan;
+    src: url(OpenSans-Bold.ttf);
+}
+
+.background{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+    font-family: thefont;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content h3{
+    font-family: myfont;
+    margin-top: 15px;
+    margin-left: 75px;
+    color: black;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+.navbar {
+    position: absolute;
+    text-align: right;
+    margin-left: 500px;
+    margin-top: 40px;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    text-align: right;
+    margin: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: Opensan;
+}
+
+.navbar a:hover{
+    color: burlywood;
+}
+
+.content img{
+    height: 50%;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.content .img-container .image{
+    height: 50%;
+    width: 85%;
+    margin-top: 110px;
+    display: flex;
+    margin-left: -10px;
+}
+
+.content p{
+    text-align: center;
+    margin-top: -100px;
+    text-wrap: inherit;
+    font-family: Roxfont;
+    font-size: 250%;
+}
+
+.content span{
+    background-color: rgb(255, 255, 255);
+    font-family: Roxfont;
+}
+.newnav{
+    text-align: center;
+    text-decoration: none;
+    margin-top: -20%;
+}
+
+.newnav a{
+    margin: 130px;
+    text-decoration: none;
+    color: black;
+    font-family: Opensan;
+    cursor: pointer;
+}
+
+.newnav a:hover{
+    color: burlywood;
+}

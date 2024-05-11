@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bday.css" />
+    <title>Weddings</title>
+</head>
+<script async src="https://basicons.xyz/embed.js"> </script>
+<body>
+    <a href="services.html"><i class="bsc-home-house"></i></a>
+    <div class="background"></div>
+    <div class="container">
+        <h1>B I R T H D A Y</h1>
+
+        <div class="image-container">
+            <a href="bir1.html">
+            <div class="image"><img src="images/bir1.jpg" alt="wed1"></a></div>
+        
+            <div class="buttons-container1">
+                <a href="#" class="btn1 test-completed1"></a>
+            </div>
+         <a href="bir2.html">
+            <div class="image"><img src="images/bir2.jpg" alt="image1"></a></div>
+        
+            <div class="buttons-container2">
+                <a href="#" class="btn2 test-completed2"></a>
+            </div>
+        
+         <a href="bir3.html">
+            <div class="image"><img src="images/bir3.jpg" alt="image1"></div>
+        
+            <div class="buttons-container3">
+                <a href="#" class="btn3 test-completed3"></a>
+            </div>
+        
+         <a href="bir4.html">
+            <div class="image"><img src="images/bir4.jpg" alt="image1"></div>
+        
+            <div class="buttons-container4">
+                <a href="#" class="btn4 test-completed4"></a>
+            </div>
+
+         <a href="bir5.html">
+            <div class="image"><img src="images/bir5.jpg" alt="image1"></div>
+        
+            <div class="buttons-container5">
+                <a href="#" class="btn5 test-completed5"></a>
+            </div>
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="images/wed1.jpeg" alt="image">
+            </div>
+            <script>
+                document.querySelectorAll('.image-container img').forEach(image =>{
+                    image.onclick = () =>{document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+                });
+            
+                document.querySelector('.popup-image span').onclick = ()=>{
+                    document.querySelector('.popup-image').style.display = 'none';
+                }
+            </script>
+</div>
+    </div>
+</div>
+</body>
+</html>

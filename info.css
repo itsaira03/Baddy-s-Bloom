@@ -1,0 +1,207 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: myfont;
+    src: url(Gistesy.ttf);
+}
+@font-face {
+    font-family: Roxfont;
+    src: url(RoxboroughCF.ttf);
+}
+
+@font-face {
+    font-family: Opensan;
+    src: url(OpenSans-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 380px;
+    position: absolute;
+    transform: translate(-110%,-150%);
+    top: 0;
+    left: 105%;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/infobg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    width: 25%;
+    height: 70%;
+    margin-left: 120px;
+    justify-content: center;
+    overflow: hidden;
+    float: left;
+    box-shadow: 2px 2px 5px #000000;
+    margin-top: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(0.95);
+}
+
+.content h1{
+    font-family: Roxfont;
+    margin-top: 100px;
+    margin-left: 650px;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.content p {
+    font-family: Roxfont;
+    margin: 250px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 150px;
+    text-shadow: 2px 2px 5px #fff;
+    margin-left: 700px;
+}
+
+.toast{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fdfdfd;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left:  burlywood;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+
+}
+
+.toast.active{
+    transform: translateX(0%);
+}
+
+.toast .toast-content{
+    display: flex;
+    align-items: center;
+   
+}
+
+.toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: burlywood;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    
+}
+
+.message .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #666666;
+}
+
+.message .text.text-1{
+    font-weight: 600;
+    color: #333;
+}
+
+.toast .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toast .close:hover{
+    opacity: 1;
+}
+
+.toast .progress{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color:burlywood;
+}
+
+.progress.active:before{
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+button{
+    font-family: Opensan;
+    display: flex;
+    padding: 12px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: burlywood;
+    color: #000000;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: -200px;
+    margin-left: 790px;
+    margin-bottom: -100px;
+}
+
+button:hover{
+    background-color: rgb(131, 97, 52);
+    font-family: Opensan;
+}
+
+.toast.active ~ button{
+    pointer-events: none;
+}
