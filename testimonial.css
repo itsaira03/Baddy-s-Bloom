@@ -114,12 +114,14 @@ body {
     padding: 5px;
   }
 
+
+
   .content h4{
     text-decoration: none;
     color: black;
     font-family: Opensan;
     cursor: pointer;
-    font-size: 150%;
+    font-size: 180%;
     
   }
 
